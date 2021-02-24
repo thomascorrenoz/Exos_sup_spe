@@ -9,4 +9,10 @@
     <string name="pensez_soutenir_le_d_veloppement_en_nous_supportant">Pensez à soutenir le développement en nous supportant !</string>
     <string name="ecs1">ECS1</string>
     <string name="ece1">ECE1</string>
+    <string name="mp_mp">MP/MP*</string>
+    <string name="psi_psi">PSI/PSI*</string>
+    <string name="exercices_de_deuxi_me_ann_e">Exercices de deuxième année</string>
+    <string name="pc_pc">PC/PC*</string>
+    <string name="bcpst2">BCPST2</string>
+    <string name="ecs2">ECS2</string>
 </resources>
