@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageView baseline_menu_action_bar = findViewById(R.id.baseline_menu_icon);
-        TextView title = findViewById(R.id.tile_action_bar);
 
         baseline_menu_action_bar.setOnClickListener(new View.OnClickListener() {
             @Override

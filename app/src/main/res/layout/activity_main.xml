@@ -1,11 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
 
-    <include layout="@layout/action_bar"/>
+        <include
+            android:id="@+id/include_action_bar"
+            layout="@layout/action_bar" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/Nombre_d_exercices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/plus_de_2500_exercices_de_math_matiques_corrig_s_votre_disposition_gratuitement"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/include_action_bar"
+            app:layout_constraintStart_toStartOf="@+id/include_action_bar"
+            app:layout_constraintTop_toBottomOf="@+id/include_action_bar" />
+
+        <TextView
+            android:id="@+id/support_main_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/pensez_soutenir_le_d_veloppement_en_nous_supportant"
+            android:textColor="#ff5733"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nombre_d_exercices" />
+
+        <TextView
+            android:id="@+id/exercices_de_premiere_annee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exercices_de_premi_re_ann_e"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/support_main_text"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/buttonMPSI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mpsi"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#006937"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/include_action_bar"
+            app:layout_constraintTop_toBottomOf="@+id/exercices_de_premiere_annee"
+            android:paddingTop="12dp"
+            android:paddingHorizontal="100dp"/>
+
+        <Button
+            android:id="@+id/buttonPCSI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pcsi"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#006937"
+            app:layout_constraintEnd_toEndOf="@id/buttonMPSI"
+            app:layout_constraintStart_toStartOf="@+id/buttonMPSI"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMPSI"
+            android:paddingTop="12dp"
+            android:paddingHorizontal="100dp"/>
+
+        <Button
+            android:id="@+id/buttonBCPST1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bcpst"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#006937"
+            app:layout_constraintEnd_toEndOf="@id/buttonPCSI"
+            app:layout_constraintStart_toStartOf="@+id/buttonPCSI"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPCSI"
+            android:paddingTop="12dp"
+            android:paddingHorizontal="100dp"/>
+
+        <Button
+            android:id="@+id/buttonECS1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ecs1"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#006937"
+            app:layout_constraintEnd_toEndOf="@id/buttonBCPST1"
+            app:layout_constraintStart_toStartOf="@+id/buttonBCPST1"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBCPST1"
+            android:paddingTop="12dp"
+            android:paddingHorizontal="100dp"/>
+
+        <Button
+            android:id="@+id/buttonECE1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ece1"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#006937"
+            app:layout_constraintEnd_toEndOf="@id/buttonECS1"
+            app:layout_constraintStart_toStartOf="@+id/buttonECS1"
+            app:layout_constraintTop_toBottomOf="@+id/buttonECS1"
+            android:paddingTop="12dp"
+            android:paddingHorizontal="100dp"/>
+
+        <TextView
+            android:id="@+id/exercices_de_deuxieme_annee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercices de deuxième année"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/buttonECE1"
+            app:layout_constraintStart_toStartOf="@id/buttonECE1"
+            app:layout_constraintTop_toBottomOf="@+id/buttonECE1"
+            tools:ignore="NotSibling" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
