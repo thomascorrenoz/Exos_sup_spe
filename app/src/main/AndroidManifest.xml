@@ -19,6 +19,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ExosSupSpe">
+        <activity android:name=".sous_chapitres"></activity>
         <activity
             android:name=".chapitres"
             android:banner="@drawable/app_icon_your_company"
