@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ExosSupSpe">
-        <activity android:name=".scrollable_exercices"></activity>
+        <activity android:name=".exercice_corrige"></activity>
+        <activity android:name=".scrollable_exercices" />
         <activity android:name=".sous_chapitres" />
         <activity
             android:name=".chapitres"
