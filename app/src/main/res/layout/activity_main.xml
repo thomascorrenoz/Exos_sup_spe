@@ -38,23 +38,9 @@ android:layout_height="fill_parent">
             android:textSize="20sp"
             android:textStyle="bold"
             android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="@id/Nombre_d_exercices"
-            app:layout_constraintStart_toStartOf="@id/Nombre_d_exercices"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Nombre_d_exercices" />
-
-        <TextView
-            android:id="@+id/Organisation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="Les exercices sont rangés par chapitre et sous-chapitre"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="@+id/support_main_text"
-            app:layout_constraintStart_toStartOf="@+id/support_main_text"
-            app:layout_constraintTop_toBottomOf="@+id/support_main_text" />
 
         <TextView
             android:id="@+id/exercices_de_premiere_annee"
@@ -67,7 +53,7 @@ android:layout_height="fill_parent">
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Organisation"
+            app:layout_constraintTop_toBottomOf="@+id/support_main_text"
             tools:ignore="NotSibling" />
 
         <Button
@@ -149,7 +135,7 @@ android:layout_height="fill_parent">
             android:id="@+id/exercices_de_deuxieme_annee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/exercices_de_deuxi_me_ann_e"
+            android:text="Exercices de deuxième année"
             android:textSize="20sp"
             android:textStyle="bold"
             android:paddingTop="10dp"
@@ -158,96 +144,5 @@ android:layout_height="fill_parent">
             app:layout_constraintStart_toStartOf="@id/buttonECE1"
             app:layout_constraintTop_toBottomOf="@+id/buttonECE1"
             tools:ignore="NotSibling" />
-
-        <Button
-            android:id="@+id/buttonMP"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/mp_mp"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:backgroundTint="#006937"
-            app:layout_constraintEnd_toEndOf="@id/exercices_de_deuxieme_annee"
-            app:layout_constraintStart_toStartOf="@+id/exercices_de_deuxieme_annee"
-            app:layout_constraintTop_toBottomOf="@+id/exercices_de_deuxieme_annee"
-            android:paddingTop="12dp"
-            android:paddingHorizontal="100dp"/>
-
-        <Button
-            android:id="@+id/buttonPSI"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/psi_psi"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:backgroundTint="#006937"
-            app:layout_constraintEnd_toEndOf="@id/buttonMP"
-            app:layout_constraintStart_toStartOf="@+id/buttonMP"
-            app:layout_constraintTop_toBottomOf="@+id/buttonMP"
-            android:paddingTop="12dp"
-            android:paddingHorizontal="100dp"/>
-
-        <Button
-            android:id="@+id/buttonPC"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/pc_pc"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:backgroundTint="#006937"
-            app:layout_constraintEnd_toEndOf="@id/buttonPSI"
-            app:layout_constraintStart_toStartOf="@+id/buttonPSI"
-            app:layout_constraintTop_toBottomOf="@+id/buttonPSI"
-            android:paddingTop="12dp"
-            android:paddingHorizontal="100dp"/>
-
-        <Button
-            android:id="@+id/buttonBCPST2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/bcpst2"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:backgroundTint="#006937"
-            app:layout_constraintEnd_toEndOf="@id/buttonPC"
-            app:layout_constraintStart_toStartOf="@+id/buttonPC"
-            app:layout_constraintTop_toBottomOf="@+id/buttonPC"
-            android:paddingTop="12dp"
-            android:paddingHorizontal="100dp"/>
-
-        <Button
-            android:id="@+id/buttonECS2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ecs2"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:backgroundTint="#006937"
-            app:layout_constraintEnd_toEndOf="@id/buttonBCPST2"
-            app:layout_constraintStart_toStartOf="@+id/buttonBCPST2"
-            app:layout_constraintTop_toBottomOf="@+id/buttonBCPST2"
-            android:paddingTop="12dp"
-            android:paddingHorizontal="100dp"/>
-
-        <Button
-            android:id="@+id/buttonECE2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="ECE2"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:backgroundTint="#006937"
-            app:layout_constraintEnd_toEndOf="@id/buttonECS2"
-            app:layout_constraintStart_toStartOf="@+id/buttonECS2"
-            app:layout_constraintTop_toBottomOf="@+id/buttonECS2"
-            android:paddingTop="12dp"
-            android:paddingHorizontal="100dp"/>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
