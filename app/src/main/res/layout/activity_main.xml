@@ -9,17 +9,13 @@ android:layout_height="fill_parent">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".MainActivity">
-
-        <include
-            android:id="@+id/include_action_bar"
-            layout="@layout/action_bar" />
-
+        
         <TextView
             android:id="@+id/Nombre_d_exercices"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="5dp"
-            android:text="@string/plus_de_2500_exercices_de_math_matiques_corrig_s_votre_disposition_gratuitement"
+            android:text="@string/plus_de_n_exercices_de_math_matiques_corrig_s_votre_disposition_gratuitement"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"

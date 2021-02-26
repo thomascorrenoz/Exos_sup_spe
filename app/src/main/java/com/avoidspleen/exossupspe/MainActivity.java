@@ -16,14 +16,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView baseline_menu_action_bar = findViewById(R.id.baseline_menu_icon);
-
-        baseline_menu_action_bar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent menu = new Intent(MainActivity.this, main_menu.class);
-                MainActivity.this.startActivity(menu);
-            }
-        });
     }
 }

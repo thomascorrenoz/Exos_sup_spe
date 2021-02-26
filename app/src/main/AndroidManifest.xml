@@ -16,7 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExosSupSpe"
         tools:ignore="ExtraText">
-        <activity android:name=".main_menu"></activity>
         <activity android:name=".exercice_corrige" />
         <activity android:name=".scrollable_exercices" />
         <activity android:name=".sous_chapitres" />
