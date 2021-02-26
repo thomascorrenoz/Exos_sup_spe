@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.avoidspleen.exossupspe">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.avoidspleen.exossupspe"
+    tools:ignore="ImpliedTouchscreenHardware,MissingLeanbackLauncher">
 
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ExosSupSpe">
-<<<<<<< HEAD
-        <activity android:name=".exercice_corrige"></activity>
+        android:theme="@style/Theme.ExosSupSpe"
+        tools:ignore="ExtraText">
+        <activity android:name=".exercice_corrige" />
         <activity android:name=".scrollable_exercices" />
         <activity android:name=".sous_chapitres" />
-        <activity
-            android:name=".chapitres"
-            android:banner="@drawable/app_icon_your_company"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_chapitres"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".DetailsActivity" />
-        <activity android:name=".PlaybackActivity" />
-        <activity android:name=".BrowseErrorActivity" />
-=======
->>>>>>> parent of 2868a01 (Nouvelle activité chapitres)
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
