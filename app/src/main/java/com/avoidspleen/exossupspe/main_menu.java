@@ -6,23 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class main_menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_menu);
 
         ImageView baseline_menu_action_bar = findViewById(R.id.baseline_menu_icon);
 
         baseline_menu_action_bar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent menu = new Intent(MainActivity.this, main_menu.class);
-                MainActivity.this.startActivity(menu);
+                Intent main = new Intent(main_menu.this, MainActivity.class);
+                main_menu.this.startActivity(main);
             }
         });
     }
